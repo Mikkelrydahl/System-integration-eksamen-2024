@@ -1,0 +1,56 @@
+# 00 Install these
+
+**Type**: Individual
+
+Of course, you don't need to do anything if you already have these. Check if you do by running different versions of `--v`, `-v`, `--version` etc. or just run the command. 
+
+When you see "$" below it signifies the terminal prompt and should not be added to the command to run. 
+
+### Install Node.js. 
+
+Install Node.js: https://nodejs.org/en/download
+
+Both LTS (long-time support) or Current are fine. 
+
+### Install Postman and create account
+
+https://www.postman.com/
+
+Create an account. We will be using features that require the non-lightweight version as they call it. You can use a throwaway email to signup. 
+
+### Make sure you can run Python
+
+Python comes preinstalled on all operating systems but make sure that you can run Python on your computer. 
+
+You might need to run this on Windows in an admin Powershell terminal to run Python. 
+
+```powershell
+$ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
+```
+
+Install Ruby. 
+
+Install Docker: https://www.docker.com/products/docker-desktop/
+
+# Windows users only
+
+Install Chocolatey: https://chocolatey.org/
+
+Don't use CMD. 
+
+Not a requirement but recommended: Install Windows subsystem for Linux: https://learn.microsoft.com/en-us/windows/wsl/install
+
+Make sure that you can actually run it. If you have Docker installed prior to it then it will try to launch in Docker and fail. This is the solution to that problem:
+
+https://stackoverflow.com/questions/75157946/wsl-failed-to-initialize-on-windows-11
+
+# Mac users only
+
+Install homebrew: https://brew.sh/
+
+Video guide on how to download for Macbook M1 or newer: https://youtu.be/Qvfvj-UCJuQ?t=55
+
+# Install Poetry
+
+https://python-poetry.org/docs/main/
+
