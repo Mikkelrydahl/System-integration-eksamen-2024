@@ -1,0 +1,9 @@
+For the exam
+
+Exposee: Besides the docs given to the integrator you must also generate docs for the entire database. 
+Exposee: It is recommended to create a document where you note down the result of your research containing arguments for and against various databases.
+
+Hand-in:
+There will be two hand-ins:
+	1. Exposee: Documentation
+	2. Integrator: Screenshots.

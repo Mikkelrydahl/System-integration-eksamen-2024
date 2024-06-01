@@ -1,0 +1,38 @@
+During your testing the url, referenced {{webUrl}} in documentation, will be 
+https://4176908865ffaf55d1ea3353a2bb6459.serveo.net/
+
+The Database is a single cloud-hosted collection in MongoDB.
+
+Two valid webhook eventNames are available "getPayment" and "deletePayment", they will trigger when get or delete is called on attached payment.
+
+GET: {{webUrl}}/
+	returns static string to verify API is live
+
+GET: {{webUrl}}/payment/{{paymentId}}
+	returns the payment with given paymentId as JSON
+
+POST: {{webUrl}}/payment
+	adds valid JSON payment object in database and returns it
+	Example:
+{
+    "paymentId": 1, //this will be ignored by the API
+    "paymentSender": "Name",
+    "paymentAmount": 10,
+    "paymentCompleted": false
+}
+
+
+POST: {{webUrl}}/payment/webhook
+	adds valid JSON webhook to payment object in database and returns it.
+	Example:
+{
+    "paymentId": 1,
+    "eventName": "deletePayment",
+    "endpointUrl": "https://b1b7cb39d33fed00cd05a08bc982496c.serveo.net/webhook/paymentDelete"
+}
+
+DELETE: {{webUrl}}/payment/webhook/{{paymentId}}
+	deletes ALL webhooks registered to payment
+
+GET: {{webUrl}}/ping
+	triggers all registered webhooks for debugging

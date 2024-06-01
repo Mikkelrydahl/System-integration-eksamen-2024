@@ -1,0 +1,33 @@
+The database is MongoDB
+
+How to connect to a MongoDB database:
+https://www.mongodb.com/docs/compass/current/connect
+
+The database uses password for verification. For example if you decide to connect with MongoDB Compass your connection string would look like:
+mongodb+srv://<username>:<password>@granular-access-pair-as.paql2tl.mongodb.net/
+
+Root access user. To verify that database hosting is functional.
+Username: cani0006
+Password: CejHHf4S3mZWT6fs
+
+Real user account with granular access set up in 1 database with 3 collections, each collection contains one unique object. In addition to collection level access this profile also has the ability to list all collections in its database. See full permissions at the end of document.
+Username: amel0002
+Password: SV1ufp8W5TUaH4yP
+
+
+
+listCollections
+@testing-db(all collections)
+
+find
+@testing-db(read-only)
+@testing-db(read-and-write)
+
+insert
+@testing-db(read-and-write)
+
+remove
+@testing-db(read-and-write)
+
+update
+@testing-db(read-and-write)
