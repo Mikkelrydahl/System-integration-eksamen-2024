@@ -8,17 +8,11 @@ public class PersonController : ControllerBase
 {
     private static readonly Person person = new Person
     {
-        name = "CasperDotnetGenerated",
-        age = 24,
-        hobbies = new List<string> { "coding", "eating", "gaming" }
+        name = "Mikkel",
+        age = 27,
+        hobbies = new List<string> { "running", "gaming", "cooking" }
     };
 
-    private readonly ILogger<PersonController> _logger;
-
-    public PersonController(ILogger<PersonController> logger)
-    {
-        _logger = logger;
-    }
 
     [HttpGet]
     public ActionResult<Person> Get()
@@ -47,4 +41,5 @@ public class PersonController : ControllerBase
                 return StatusCode(StatusCodes.Status500InternalServerError);
         }
     }
+
 }

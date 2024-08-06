@@ -26,20 +26,10 @@ public class Person
     {
         return $"{nameof(name)},{nameof(age)},{nameof(hobbies)}\n{name},{age},\"{string.Join(",", hobbies)}\"";
 
-        // IEnumerable<Person> persons = new List<Person> { this };
-
-        // using (var writer = new StringWriter())
-        // using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
-        // {
-        //     csv.WriteRecords(persons);
-
-        //     return writer.ToString();
-        // }
     }
 
     public string ToYaml()
     {
-        //return $"name: {name}\nage: {age}\nhobbies:\n  - {string.Join("\n  - ", hobbies)}";
 
         var serializer = new SerializerBuilder()
             .WithNamingConvention(CamelCaseNamingConvention.Instance)

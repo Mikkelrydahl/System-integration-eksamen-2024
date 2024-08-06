@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\99_Data_Parsing_Server_pt1.props" />
+</Project>
